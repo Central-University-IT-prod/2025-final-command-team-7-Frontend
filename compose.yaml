@@ -1,0 +1,9 @@
+services:
+  app:
+    image: REDACTED:5050/team-7/frontend:latest
+    restart: always
+    ports:
+      - 8081:5173
+    environment:
+      VITE_API_URL: https://prod-team-7-s35as4hl.REDACTED/api/v1
+      VITE_BASE_URL: /
